@@ -39,7 +39,7 @@ Il existe plusieurs manières de nommer les variables, `"moyenneDuChamp1"` n’e
 
 	`_moyenneduchamp1`
 
-	*etc*.
+*etc*.
 
 L’idée est que vous optiez pour une écriture cohérente et explicite sur l’ensemble de votre code, et que vous exigiez que quiconque travaille avec vous code de la même manière. Cela n’est pas simple, mais il faut tenter d’y parvenir.
 
