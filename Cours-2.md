@@ -81,7 +81,7 @@ Cet ordre implicite est fondamental lorsque vous serez amené à renommer une va
 
 	`moyenneDuChamp1 = moyenneDuChamp2`
 
-Au terme de l’exécution de ce code, que vaut `moyenneDuChamp1 ? `10` ou `20`. Réponse : `20` ! Par la dernière ligne, vous avez déclaré à votre code de donner la valeur de `moyenneDuChamp2`, qui vaut toujours `20`, à `moyenneDuChamp1`. De même, il est possible de réaffecter une variable en utilisant simplement l’opérateur d’affectation `=`.
+Au terme de l’exécution de ce code, que vaut `moyenneDuChamp1` ? `10` ou `20`. Réponse : `20` ! Par la dernière ligne, vous avez déclaré à votre code de donner la valeur de `moyenneDuChamp2`, qui vaut toujours `20`, à `moyenneDuChamp1`. De même, il est possible de réaffecter une variable en utilisant simplement l’opérateur d’affectation `=`.
 
 Rien de très compliquer dans l’affection et la déclaration des variables, mais il faut **être très rigoureux**.
 
