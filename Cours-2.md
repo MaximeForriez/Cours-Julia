@@ -125,7 +125,7 @@ Pour finir, il faut noter que certains mots sont interdits pour nommer une varia
 
 - `break`
 
-- `catch
+- `catch`
 
 - `const`
 
@@ -201,7 +201,7 @@ Les types de variables ne sont qu’un élément de ce que le langage `Julia` ap
 
 - `string(`nombre`)` permettant la conversion d’un nombre en chaîne de caractères ;
 
-- `convert(type, valeur)` permettant la conversion d’un nombre dans le type de nombre choisi ;
+- `convert(`type`,` valeur`)` permettant la conversion d’un nombre dans le type de nombre choisi ;
 
 - `parse(`type`,` chaîne de caractères`)` permettant la conversion des chaînes de caractères. Cette fonction ignore les espaces, et ne convertit pas les autres caractères ;
 
