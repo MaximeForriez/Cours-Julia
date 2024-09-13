@@ -1,6 +1,6 @@
 # Cours 9. Les tableaux (09/12/2023)
 
-Les tableaux ont quelques spécificités sur Julia. La syntaxe est la suivante :
+Les **tableaux** ont quelques spécificités sur `Julia`. La syntaxe est la suivante :
 
 table = [ variable1, variable2, variable3 ]
 
