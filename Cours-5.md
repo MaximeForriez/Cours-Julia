@@ -1,6 +1,6 @@
 # Cours 5. Les conditions (23/05/2023)
 
-Les conditions font des instructions de base de n’importe quel langage de programmation.
+Les **conditions** font des instructions de base de n’importe quel langage de programmation.
 
 ## L’écriture d’une condition simple
 
