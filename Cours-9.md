@@ -125,19 +125,19 @@ Tout est alors copié récursivement, résultant en un objet totalement indépen
 
 On peut créer des tableaux pré-remplis :
 
-	`zeros(...)` : tableau de *n* éléments rempli de `0.0`
+- `zeros(...)` : tableau de *n* éléments rempli de `0.0`
 
-	`ones(...)` : tableau de *n* éléments rempli de `1.0`
+- `ones(...)` : tableau de *n* éléments rempli de `1.0`
 
-	`Vector{`nom du type`}(undef,` *n*`)` : tableau de *n* éléments non initialisés
+- `Vector{`nom du type`}(undef,` *n*`)` : tableau de *n* éléments non initialisés
 
-	`range(start = 0, stop = stop, length =` *n*`)` : tableau de *n* nombres équi-répartis entre `start` et `stop`
+- `range(start = 0, stop = stop, length =` *n*`)` : tableau de *n* nombres équi-répartis entre `start` et `stop`
 
 On peut remplir un tableau avec une même valeur :
 
-	`fill!(table,` valeur`)`
+- `fill!(table,` valeur`)`
 
-	`fill(`valeur`,` nombre de colonnes`,` nombre de lignes`)`
+- `fill(`valeur`,` nombre de colonnes`,` nombre de lignes`)`
 
 On peut tester si une valeur est un élément du tableau :
 
