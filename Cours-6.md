@@ -18,10 +18,8 @@ instructions de la boucle
 
 > [!TIP]
 > Avec des conditions, on peut utiliser :
-
->`continue` qui permet de passer à l’itération suivante ;
-
->`break` qui quitte la boucle.
+> - `continue` qui permet de passer à l’itération suivante ;
+> - `break` qui quitte la boucle.
 
 ## La boucle `for`... `in`...
 
