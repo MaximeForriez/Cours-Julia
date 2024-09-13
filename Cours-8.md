@@ -2,11 +2,11 @@
 
 À la différence des tuples, les **dictionnaires** sont des structures de données **modifiables**, mais sans ordre. Ils sont définis par des **clés**. Ils s’écrivent comme une variable. Ils se notent :
 
-	`dictionnaire = Dict(clé1 => variable1, clé2 => variable2, clé3 => variable3, ...)`
+	dictionnaire = Dict(clé1 => variable1, clé2 => variable2, clé3 => variable3, ...)
 
 ou
 
-	`dictionnaire = Dict(:clé1 => variable1, :clé2 => variable2, :clé3 => variable3, ...)`
+	dictionnaire = Dict(:clé1 => variable1, :clé2 => variable2, :clé3 => variable3, ...)
 
 > [!TIP]
 > On peut créer un dictionnaire vide, puisque la structure est modifiable.
@@ -18,15 +18,15 @@ ou
 
 On peut appeler une variable par sa clé :
 
-	`dictionnaire[clé1]`
+	dictionnaire[clé1]
 
 On peut ajouter une nouvelle clé :
 
-	`dictionnaire[clé4] = variable4`
+	dictionnaire[clé4] = variable4
 
 On peut supprimer une variable par sa clé :
 
-	`pop!(dictionnaire, clé à supprimer)`
+	pop!(dictionnaire, clé à supprimer)
 
 La manipulation supprime la clé et la variable.
 
