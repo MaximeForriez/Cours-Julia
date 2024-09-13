@@ -32,23 +32,23 @@ La manipulation supprime la clé et la variable.
 
 On peut mesurer la taille du dictionnaire :
 
-	`length(dictionnaire)`
+	length(dictionnaire)
 
 On peut retourner les clés contenues dans le dictionnaire :
 
-	`keys(dictionnaire)`
+	keys(dictionnaire)
 
 On peut tester l’appartenance d’une clé au dictionnaire avec ϵ (`\in` + `tab`).
 
-	clé à tester `ϵ keys(dictionnaire)`
+	clé à tester ϵ keys(dictionnaire)
 
 On peut retourner les valeurs :
 
-	`values(dictionnaire)`
+	values(dictionnaire)
 
 On peut tester l’appartenance d’une valeur au dictionnaire :
 
-	valeur à tester `ϵ values(dictionnaire)`
+	valeur à tester ϵ values(dictionnaire)
 
 On peut parcourir un dictionnaire avec une boucle `for`... `in`... (cf. cours sur les boucles).
 
@@ -56,6 +56,6 @@ On peut placer des tableaux en valeur dans le dictionnaire (cf. cours sur les ta
 
 On peut vérifier la présence d’une clé en utilisant l’opérateur :
 
-	`haskey(dictionnaire, :`clé à tester`)`
+	haskey(dictionnaire, :clé à tester)
 
 Maxime Forriez.

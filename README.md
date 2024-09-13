@@ -26,4 +26,6 @@
 
 ### Cours 11. Les fonctions (09/12/2023)
 
-## Partie 2. Paquets et usages `de Julia`
+## Partie 2. Commandes d'expert
+
+## Partie 3. Paquets et usages `de Julia`

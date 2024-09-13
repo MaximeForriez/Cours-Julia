@@ -33,11 +33,11 @@ Jadis, au tout début des langages informatiques, il fallait nommer les variable
 
 Il existe plusieurs manières de nommer les variables, `"moyenneDuChamp1"` n’est qu’un exemple possible. Vous pouvez aussi envisager de l’écrire :
 
-	`moyenne_du_champ_1`
+	moyenne_du_champ_1
 
-	`moyenneduchamp1`
+	moyenneduchamp1
 
-	`_moyenneduchamp1`
+	_moyenneduchamp1
 
 *etc*.
 
@@ -61,25 +61,25 @@ Pour finir, **de manière générique, toute variable commence avec une minuscul
 
 L’affectation d’une variable consiste à la nommer, à exiger la création d’un espace mémoire pour cette donnée précise. À cette étape, la variable n’a aucune valeur qui lui est liée. Il s’agit juste d’une adresse allouée dans la mémoire.
 
-	`moyenneDuChamp1`
+	moyenneDuChamp1
 
 Cela sera rappelé lors du prochain chapitre qui généralisera la notion, mais la déclaration d’une variable utilise un opérateur `=`. Une valeur complète son affectation.
 
-	`moyenneDuChamp1 = 10`
+	moyenneDuChamp1 = 10
 
 À partir du moment où la ligne a été lue par le compilateur `Julia`, `moyenneDuChamp1` est une variable valant `10`. Il suffit de taper son nom pour utiliser la valeur `10`. De manière plus imagée, dans la case `moyenneDuChamp1`, se trouve la valeur `10`.
 
 La déclaration ne s’effectue que dans un sens.
 
-	`10 = moyenneDuChamp1`
+	10 = moyenneDuChamp1
 
 n’affecte rien du tout.
 
 Cet ordre implicite est fondamental lorsque vous serez amené à renommer une variable. Par exemple,
 
-	`moyenneDuChamp2 = 20`
+	moyenneDuChamp2 = 20
 
-	`moyenneDuChamp1 = moyenneDuChamp2`
+	moyenneDuChamp1 = moyenneDuChamp2
 
 Au terme de l’exécution de ce code, que vaut `moyenneDuChamp1` ? `10` ou `20`. Réponse : `20` ! Par la dernière ligne, vous avez déclaré à votre code de donner la valeur de `moyenneDuChamp2`, qui vaut toujours `20`, à `moyenneDuChamp1`. De même, il est possible de réaffecter une variable en utilisant simplement l’opérateur d’affectation `=`.
 
@@ -87,19 +87,19 @@ Rien de très compliquer dans l’affection et la déclaration des variables, ma
 
 Il faut remarquer que l’on déclare un caractère de la manière suivante :
 
-	`caractere = 'lettre minuscule ou majuscule'`
+	caractere = 'lettre minuscule ou majuscule'
 
 et pour un chaîne de caractères deux cas sont possibles :
 
-	`chaine = "chaîne de caractères"`
+	chaine = "chaîne de caractères"
 
 ou
 
-	`chaine = """chaîne de caractères"""`
+	chaine = """chaîne de caractères"""
 
 Les trois guillemets permettent d’utiliser le symbole " dans la chaîne de caractères. Si le guillemet est placé au début ou à la fin de la chaîne de caractères, il faut laisser un espace :
 
-	`chaine =""" "chaîne de caractères" """`
+	chaine =""" "chaîne de caractères" """
 
 Les nombres à virgule flottante sont matérialisés par un point `.`
 
@@ -107,11 +107,11 @@ Il est possible de vérifier le type affecté à la variable déclarée grâce �
 
 Il faut noter que l’on peut déclarer plusieurs variables en même temps :
 
-	`x, y = 1, 2`
+	x, y = 1, 2
 
 ce qui équivaut à :
 
-	`x = 1 y = 1`
+	x = 1 y = 1
 
 Pour finir, il faut noter que certains mots sont interdits pour nommer une variable, car il faut partir des instructions de base de `Julia` :
 
@@ -193,7 +193,7 @@ Avant de coder les constantes, il faut bien comprendre que les constantes resten
 
 En `Julia`, le modificateur `const` permet de définir une constante.
 
-	`const MOYENNEDUCHAMP1 = 10`
+	const MOYENNEDUCHAMP1 = 10
 
 ## La conversion des types
 

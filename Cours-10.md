@@ -10,15 +10,13 @@ Maintenant que vous connaissez les tableaux, on peut finir le cours sur les cha�
 
 > [!TIP]
 > On peut changer le séparateur.
-
-	`split(chaine, ‘caractère’)`
+>	split(chaine, 'caractère')
 
 `join(table)` crée une chaîne de caractères concaténée.
 
 > [!TIP]
 > On peut utiliser un séparateur.
-
-	`split(table, '`caractère`')`
+>	split(table, 'caractère')
 
 `\uXXXX` : caractère UTF 4-digit `HEX`
 
@@ -26,11 +24,11 @@ Maintenant que vous connaissez les tableaux, on peut finir le cours sur les cha�
 
 On peut parcourir une chaîne de caractères :
 
-	`for caractere in "caractere"`
+	for caractere in "caractere"
 
-		`println(caractere)`
+		println(caractere)
 
-	`end`
+	end
 
 `findfirst(isequal(‘i’), "chaine")` donne le premier caractère de la chaîne correspondant à `isequal(...)`.
 
@@ -38,7 +36,7 @@ On peut parcourir une chaîne de caractères :
 
 `replace("chaine",` chaîne à modifier `=>` modification`)` replace un caractère dans une chaîne.
 
-	`replace("chaine", "a" => "e")`
+	replace("chaine", "a" => "e")
 
 ce qui donne `"cheine"`.
 

@@ -8,43 +8,43 @@ Il n’est pas possible à ce stade de donner la vraie définition d’une chaî
 
 Une chaîne de caractères se déclare comme une variable :
 
-	`nomDeLaChaine = "Je suis une chaîne de caractères."`
+	nomDeLaChaine = "Je suis une chaîne de caractères."
 
 ou
 
-	`nomDeLaChaine = """Je suis une chaîne de caractères."""`
+	nomDeLaChaine = """Je suis une chaîne de caractères."""
 
 ## L’affichage d’une chaîne de caractères
 
 Pour afficher une chaîne de caractères, on utilise la fonction `println(`...`)`
 
-	`println("Je suis une chaîne de caractères.")`
+	println("Je suis une chaîne de caractères.")
 
 Toutefois, avec des guillemets simples, le saut de ligne est géré comme un alinéa.
 
 Il faut utiliser les triples guillemets `"""` pour gérer un saut de ligne sans alinéa.
 
-	`println("""Je suis une chaîne de caractères.""")`
+	println("""Je suis une chaîne de caractères.""")
 
 En effet, la fonction `show(...)` affiche les guillemets :
 
-	`show("Je suis une chaîne de caractères.")`
+	show("Je suis une chaîne de caractères.")
 
 ## La concaténation des chaînes de caractères
 
 La concaténation est l’opération permettant de mélanger les chaînes de caractères entre elles.
 
-	`nom = "Maxime"`
+	nom = "Maxime"
 
-	`println("Je m’appelle $nom.")`
+	println("Je m’appelle $nom.")
 
 > [!TIP]
 > Cela marche avec des nombres entiers ou réels.
 
 > [!TIP]
 > On peut additionner des nombres dans une chaîne de caractères.
->	`num1 = 1`
->	`num2 = 1.5 println("Addition : $(num1 + num2)")`
+>	num1 = 1
+>	num2 = 1.5 println("Addition : $(num1 + num2)")
 
 > [!TIP]
 > On peut combiner des chaînes de caractères et des autres variables avec le $, ce qui est une autre manière de concaténer.
@@ -63,7 +63,7 @@ La concaténation est l’opération permettant de mélanger les chaînes de car
 
 On peut sélectionner des segments de chaîne de caractères :
 
-	`nomDeLaChaine[indice1:indice2]`
+	nomDeLaChaine[indice1:indice2]
 
 Cela renvoie les caractères entre l’indice 1 et l’indice 2 inclus.
 
@@ -80,7 +80,7 @@ L’opérateur ϵ s’obtient avec en écrivant `\in` + `tab`.
 
 L’opérateur ϵ teste la présence d’un caractère dans une chaîne de caractères.
 
-	`lettre ϵ nomDeLaChaine`
+	lettre ϵ nomDeLaChaine
 
 C’est fini pour l’instant. Nous reverrons les chaînes de caractères très rapidement.
 

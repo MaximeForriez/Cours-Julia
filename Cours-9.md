@@ -2,56 +2,56 @@
 
 Les **tableaux** ont quelques spécificités sur `Julia`. La syntaxe est la suivante :
 
-	`table = [ variable1, variable2, variable3 ]`
+	table = [ variable1, variable2, variable3 ]
 
 On peut mélanger les types dans les tableaux, mais il reste ordonné.
 
 Toutefois, on peut créer un tableau vide sans type :
 
-	`table = [ ]`
+	table = [ ]
 
 On peut appeler un élément du tableau par son indice.
 
-	`table[1]`
+	table[1]
 
 > [!TIP]
 > Les indices commencent à 1, et non à 0. De fait, dans l’exemple, on appelle le premier élément.
 
 On peut parcourir un tableau :
 
-	`for element in table`
+	for element in table
 
-	`println(element)`
+		println(element)
 
-	`end`
+	end
 
 On peut affecter un type aux valeurs du tableau.
 
-exemple : `Int[ variable1, variable2, variable3]` pour un tableau d’entiers
+Exemple : `Int[ variable1, variable2, variable3]` pour un tableau d’entiers
 
 On peut insérer une variable à la fin du tableau :
 
-	`push!(table,` valeur à insérer`)`
+	push!(table, valeur à insérer)
 
 On peut supprimer la dernière valeur du tableau et la renvoyer :
 
-	`pop!(table)`
+	pop!(table)
 
 On peut changer une valeur par sa position :
 
-	`table[1] =` nouvelle variable
+	table[1] = nouvelle variable
 
 On peut créer des tableaux imbriqués :
 
-	`[ [...] , [...] , ... ]`
+	[ [...] , [...] , ... ]
 
 On peut calculer le nombre d’éléments du tableau :
 
-	`length(table)`
+	length(table)
 
 On peut sélectionner des segments :
 
-	`table[ 2 : 4 ]`
+	table[ 2 : 4 ]
 
 pour le 2<sup>e</sup> élément et le 4<sup>e</sup> élément.
 
@@ -63,30 +63,31 @@ pour le 2<sup>e</sup> élément et le 4<sup>e</sup> élément.
 
 > [!TIP]
 > On peut sélection jusqu’au dernier élément avec end.
->`table[ 2 : end ]`
+>	table[ 2 : end ]
 
 > [!TIP]
 > `begin` désigne le premier élément.
 
 On peut insérer un tableau `table2` dans un tableau `table` à la fin de ce dernier :
 
-	`table2 = [ ... ] append!(table, table2)`
+	table2 = [ ... ] 
+	append!(table, table2)
 
 On peut faire une insertion en début de tableau :
 
-	`prepend!(table, table2)`
+	prepend!(table, table2)
 
 On peut trier par ordre croissant ou alphabétique un tableau :
 
-	`sort!(table)`
+	sort!(table)
 
 On peut inverser l’ordre d’un tableau :
 
-	`reverse(table)`
+	reverse(table)
 
 On peut additionner les éléments d’un tableau de nombres :
 
-	`sum(table)`
+	sum(table)
 
 On peut appliquer une fonction sur l’ensemble d’un tableau grâce à un dot (.)
 
@@ -99,27 +100,27 @@ On peut appliquer une fonction sur l’ensemble d’un tableau grâce à un dot 
 
 On peut supprimer un élément à partir de sa position :
 
-	`slice!(table,` position`)`
+	slice!(table, position)
 
 On peut supprimer le premier élément et le retourner :
 
-	`popfirst!(table)`
+	popfirst!(table)
 
 On peut ajouter un élément en début de tableau et le retourner :
 
-	`pushfirst!(table,` valeur`)`
+	pushfirst!(table, valeur)
 
 On peut supprimer un élément à partir de sa position :
 
-	`deleteat!(table,` position`)`
+	deleteat!(table, position)
 
 On ne peut pas copier un tableau. `table2 = table1` ne crée pas une copie de `table1`. Il faut écrire :
 
-	`table2 = copy(table1)`
+	table2 = copy(table1)
 
 On peut créer une copie profonde de `table1` avec :
 
-	`table2 = deepcopy(table1)`
+	table2 = deepcopy(table1)
 
 Tout est alors copié récursivement, résultant en un objet totalement indépendant.
 
@@ -141,19 +142,19 @@ On peut remplir un tableau avec une même valeur :
 
 On peut tester si une valeur est un élément du tableau :
 
-	`in(`valeur`,` table`)`
+	in(valeur, table)
 
 ou
 
-	valeur `in table`
+	valeur in table
 
 On peut changer la dimension d’un tableau :
 
-	`reshape(1:6,` nombre de colonnes`,` nombre de lignes`)`
+	reshape(1:6, nombre de colonnes, nombre de lignes`)
 
 On peut filtrer les valeurs d’un tableau avec filter et une condition `is_______`.
 
-	`filtrer(`condition`,` tableau`)`
+	filtrer(condition, tableau)
 
 Exemple : `filtrer(isadd, 1:10)`
 
@@ -161,34 +162,34 @@ Exemple : `filtrer(isadd, 1:10)`
 
 On peut insérer un élement à l’indice *i* du tableau :
 
-	`insert!(table,` indice`,` élément`)`
+	insert!(table, indice, élément)
 
 avec *i* entre 1 et l’infini.
 
 On peut sélectionner le premier ou dernier élément :
 
-	`firstindex(table)` 
+	firstindex(table)
 
-	`lastindex(table)`
+	lastindex(table)
 
 On peut remplir un tableau avec un booléen :
 
-	`true(`*n*`)` : tableau de *n* éléments rempli de `true`
+- `true(`*n*`)` : tableau de *n* éléments rempli de `true`
 
-	`false(`*n*`)` : tableau de *n* éléments rempli de `false`
+- `false(`*n*`)` : tableau de *n* éléments rempli de `false`
 
-	`collect(`collection`)` convertit une collection en un tableau.
+- `collect(`collection`)` convertit une collection en un tableau.
 
 On peut redimensionner un tableau par un nombre :
 
-	`resize!(`table`,` nombre`)`
+	resize!(table, nombre)
 
 On peut permuter les lignes et les colonnes d’un tableau :
 
-	`permutedims(table)`
+	permutedims(table)
 
 On peut visualiser un morceau du tableau :
 
-	`view(table,` colonne`,` ligne`)`
+	view(table, colonne, ligne)
 
 Maxime Forriez.
