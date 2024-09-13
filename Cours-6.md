@@ -6,15 +6,15 @@ Les **boucles** constituent des instructions de base de n’importe quel langage
 
 La boucle `while` est une boucle qui peut être infinie, donc bloqué le calcul en cours. Il faut de fait prévoir une condition de fin définie par un test. La boucle la plus simple définit un variable que l’on va incrémenter ou décrémenter, notée `i`.
 
-`i = 1`
+	`i = 1`
 
-`while` test avec la variable i
+	`while` test avec la variable i
 
-instructions de la boucle
+		instructions de la boucle
 
-`i = i + 1`
+		`i = i + 1`
 
-`end`
+	`end`
 
 > [!TIP]
 > Avec des conditions, on peut utiliser :
@@ -25,10 +25,10 @@ instructions de la boucle
 
 La boucle `for`... `in`... permet de parcourir les structures de données (tableaux, dictionnaires, *etc*.) en utilisant une variable temporaire et locale que l’on appelle généralement de manière explicite element. Elle s’écrit :
 
-`for element in` structure de données
+	`for element in` structure de données
 
-instructions
+		instructions
 
-`end`
+	`end`
 
 Maxime Forriez.

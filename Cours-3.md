@@ -23,12 +23,15 @@ Parmi tous les opérateurs, ce sont ceux qui vont vous servir au quotidien. De f
 > [!TIP]
 > `\div` + `tab` permet d’obtenir l’obèle ÷
 
->[TIP]
+>[!TIP]
 > Il existe une fonction division euclidienne : `div(`numérateur`,` dénominateur`)`.
 
 `^` : exposant
 
-`%` : modulo (N.B. Il existe une fonction modulo : `rem(`numérateur`,` dénominateur`)`)
+`%` : modulo 
+
+> [!TIP]
+> Il existe une fonction modulo : `rem(`numérateur`,` dénominateur`)`)
 
 `//` : simplification d’une fraction
 
